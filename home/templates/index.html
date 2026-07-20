@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>House Price Prediction</title>
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏠 House Price Prediction</h1>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<form method="POST">
+
+<input type="number" name="area"
+placeholder="Area (sq.ft)" required>
+
+<input type="number" name="bedrooms"
+placeholder="Bedrooms" required>
+
+<input type="number" name="bathrooms"
+placeholder="Bathrooms" required>
+
+<input type="number" name="hall"
+placeholder="Hall" required>
+
+<input type="number" name="kitchen"
+placeholder="Kitchen" required>
+
+<button type="submit">
+Predict Price
+</button>
+
+</form>
+
+{% if prediction %}
+
+<div class="result">
+
+Predicted Price<br>
+
+₹ {{prediction}} Lakhs
+
+</div>
+
+{% endif %}
+
+<div class="footer">
+
+Developed using Flask + Machine Learning
+
+</div>
+
+</div>
+
+</body>
+</html>
+"""
