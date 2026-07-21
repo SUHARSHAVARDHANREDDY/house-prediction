@@ -3,8 +3,6 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 
 app = Flask(__name__)
-
-# Training data
 X = np.array([
     [1000, 2, 1, 1, 1],
     [1200, 2, 2, 1, 1],
@@ -19,8 +17,6 @@ X = np.array([
 ])
 
 y = np.array([30, 35, 45, 52, 60, 68, 78, 90, 105, 125])
-
-# Train model
 model = LinearRegression()
 model.fit(X, y)
 
@@ -28,7 +24,6 @@ model.fit(X, y)
 @app.route("/", methods=["GET", "POST"])
 def home():
     prediction = None
-
     if request.method == "POST":
         area = float(request.form["area"])
         bedrooms = int(request.form["bedrooms"])
