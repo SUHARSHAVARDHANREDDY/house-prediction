@@ -8,7 +8,7 @@ body {
 .container {
     width: 420px;
     margin: 60px auto;
-    background: white;
+    background: rgb(194, 179, 157);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center;
-    color: lightblue;   /* Fixed */
+    color: rgb(245, 97, 4);   
 }
 
 input {
@@ -32,16 +32,17 @@ input {
 button {
     width: 100%;
     padding: 12px;
-    font-size: 18px;
-    background: #27ae60;
-    color: white;        /* Better visibility */
-    border: none;
-    border-radius: 5px;
+    font-size: 30px;
+    background: #27aea5;
+    color: rgb(138, 78, 128);        
+    border: 10px solid #27aea5;
+    border-radius: 50px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #219150;
+    background: #21917e;
+    border-radius: 50px;
 }
 
 .result {
@@ -49,11 +50,11 @@ button:hover {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: #e74c3c;
+    color: #1f201c;
 }
 
 .footer {
     text-align: center;
-    margin-top: 20px;
-    color: gray;
+    margin-top: 50px;
+    color: rgb(87, 19, 213);
 }
